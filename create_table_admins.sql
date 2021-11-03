@@ -4,7 +4,8 @@ CREATE TABLE admins (
   last_name VARCHAR(255) NOT NULL,
   email VARCHAR(255) NOT NULL,
   username VARCHAR(255) NOT NULL,
-  hashed_password VARCHAR(255) NOT NULL
+  hashed_password VARCHAR(255) NOT NULL,
+  user_level ENUM('a', 'm') NOT NULL
 );
 
 ALTER TABLE admins ADD INDEX index_username (username);
